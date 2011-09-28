@@ -1,0 +1,3 @@
+h1. Liferay Technical Talks
+
+This repository contains all the stuff related with the technical talks organized at Liferay Spain. You will find slides, source code examples and much more, about HTML5, programming languages, cloud computing and other crazy stuff
