@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Multi collaborative puzzle</title>
+    <style type="text/css">
+        html, body {
+            background-color: #F2FBFF;
+            height: 100%;
+        }
+    </style>
+
+    <link href="/stylesheets/puzzle.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="http://yui.yahooapis.com/3.1.1/build/yui/yui-min.js"></script>
+    <script type="text/javascript" src="/js/puzzle.js"></script>
+
+</head>
+
+<body>
+
+    <p style="font-size: large;">
+        Drag and drop the slices and build YUI car!<br>
+        When you are ready to start, <strong>click "Shuffle" button</strong>!
+    </p>
+
+	<p>
+		Then open a new browser - both users can order the puzzle simultaneously.<br>
+		For testing purposes, I have not tried to compress or optimize the traffic. You will see that I am sending message on each single mousemove event and it still works pretty darn well!
+	</p>
+
+	<p>
+		<em>This example is based on my <a href="http://ipeychev.github.com/yui3-gallery/gallery-undo/3.1.1/puzzle/puzzle.html" target="_blank">previous work</a>.</em>
+	</p>
+
+    <div>
+        <input id="btn-shuffle" class="button-shuffle" type="button" disabled value="Shuffle">
+    </div>
+
+     <div id="target-container" class="target-container"></div>
+
+	 <p>
+		<a href="../">Back</a>
+	 </p>
+</body>
+</html>

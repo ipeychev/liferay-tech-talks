@@ -1,0 +1,34 @@
+<h1>{{title}}</h1>
+
+<article>
+	<p>This example user Socket.io library.</p>
+
+	<p>
+		Depending on your browser, WebSockets may (hint: Google Chrome) or may not be used. Socket.io will choose the most appropriate method.
+	</p>
+
+	<div class="yui3-u">
+		<div class="yui3-g">
+			<div class="yui3-u-3-4">
+				<div id="chatLogContent" class="chat-log-content">
+				</div>
+			</div>
+			<div class="yui3-u-1-4">
+				<div id="chatUsersContent" class="chat-users-content"></div>
+			</div>
+		</div>
+
+		<div class="yui3-u-1">
+			<div class="chat-data-container">
+				<input id="chatDataContent" class="chat-data-content"></input>
+				<button id="chatDataContentSend" class="chat-data-send">Send</button>
+			</div>
+		</div>
+	</div>
+</article>
+
+<a href="/communication">Back</a>
+
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="http://yui.yahooapis.com/3.4.0/build/yui/yui-min.js"></script>
+<script type="text/javascript" src="/js/chat.js"></script>

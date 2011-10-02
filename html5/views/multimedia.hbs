@@ -1,0 +1,90 @@
+<h1>{{title}}</h1>
+
+<article>
+	<h2>New elements and new APIs:</h2>
+	
+	<h3>
+		Two very important elements introduced:
+	</h3>
+
+	<ol>
+		<li>
+			<strong>video</strong> - used for playing videos or movies, and audio files with captions.<br>
+			<pre>&lt;video controls&gt;  <br/>  &lt;source src=&quot;assets/bc.mp4&quot;&gt;  <br/>  Your browser does not support the &lt;code&gt;video&lt;/code&gt; element.<br>&lt;/video&gt;</pre>
+		</li>
+		<li><strong>audio</strong> - represents a sound or audio stream.</li>
+		<pre>&lt;audio src=&quot;http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg&quot; autoplay&gt;  <br/>  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.  <br/>&lt;/audio&gt;</pre>
+	</ol>
+
+	<p>
+		<strong>Two formats</strong> are typically used:
+	</p>
+	<ol>
+		<li>
+			<a href="http://www.webmproject.org/">WebM</a> - open, royalty-free, media file format. WebM defines the file container structure, video and audio formats. WebM files consist of video streams compressed with the VP8 video codec and audio streams compressed with the <a href="http://www.vorbis.org/">Vorbis audio codec</a>. The WebM file structure is based on the <a href="http://www.matroska.org/">Matroska</a> container.<br>
+			<p>
+				Supported Web Browsers:</h2>
+			</p>
+
+			<ul>
+				<li><a href="http://www.mozilla.com/en-US/firefox/central/">Mozilla Firefox 4</a> and later</li>
+				<li><a href="http://www.opera.com/browser/">Opera 10.60</a> and later</li>
+				<li><a href="http://www.chromium.org/getting-involved/dev-channel">Google Chrome 6</a> and later</li>
+				<li><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home">Microsoft Internet Explorer 9</a> and later (requires <a href="http://tools.google.com/dlpage/webmmf" title="WebM Media Foundation components installer">WebM MF</a> components)</li>
+			</ul>
+		</li>
+		<li style="margin-top: 2em;">
+			<a href="http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC"><strong>H.264</strong></a> - widely used for distribution of high definition video. Patented. An organisation, called <a href="http://www.mpegla.com">MPEG LA</a> administers the licenses for patents applying to this standard. In the same time, if an H.264 encoded internet video that is free to end users will never be charged for royalties.
+
+			<p>
+				Supported Web Browsers:</h2>
+			</p>
+
+			<ul>
+				<li><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home">Microsoft Internet Explorer 9</a> and later</li>
+				<li><a href="http://www.apple.com/safari/">Apple Safari 4+</a>
+			</ul>
+		</li>
+	</ol>
+
+	<p>Example:</p>
+
+	<video controls>
+		<source src="/stylesheets/assets/bc.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+		<source src="/stylesheets/assets/bc.webm" type='video/webm; codecs="vp8, vorbis"'>
+		Your browser does not support the <code>video</code> element.
+	</video>
+
+	
+		<h4>Additional resources:</h4>
+		<ul>
+			<li>
+				<a target="blank" href="http://www.w3.org/TR/html5/video.html#video">W3C Video element</a>
+			</li>
+			<li>
+				<a target="blank" href="http://www.w3.org/TR/html5/video.html#audio">W3C Audio element</a>
+			</li>
+		</ul>
+
+		<hr>
+
+		<a href="https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html">Web Audio API</a> - allows processing and synthesizing audio in web applications.
+		<p>
+			Rich set of features:
+		</p>
+
+		<ul>
+			<li>Adding efects - fade-ins / fade-outs, granular effects, filter sweeps, LFOs (Low-frequency oscillation), etc.</li>
+			<li>Processing of audio sources from an audio or video media element.</li>
+			<li>Audio stream synthesis and processing directly in JavaScript. </li>
+			<li><a href="https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html#Features-section">much more</a></li>
+		</ul>
+
+		<a href="http://chromium.googlecode.com/svn/trunk/samples/audio/index.html" target="_blank">Examples</a>
+</article>
+
+<div class="back">
+	<a href="/">Back</a>
+</div>
+
+<script src="/js/multimedia.js"></script>
