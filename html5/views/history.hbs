@@ -1,0 +1,59 @@
+<h1>{{title}}</h1>
+
+<article>
+	<p>
+		History API consists of a few simple functions and events:
+	</p>
+
+	<ol>
+		<li><strong>pushState</strong> - allows you to add history entries</li>
+		<li><strong>replaceState</strong> - allows you to replace history antries</li>
+		<li>Travelling through the history (from developer's point of view):
+			<ul>
+				<li>
+					<strong>back()</strong> - one step back
+				</li>
+				<li>
+					<strong>forward()</strong> - one step forward
+				</li>
+				<li>
+					<strong>go()</strong> - jump to a specific point in the history. Accepts number, if 2, will move forward 2 pages.
+				</li>
+			</ul>
+		</li>
+		<li><strong>popstate</strong> event - browser fires this event on pressing back/forward buttons</li>
+	</ol>
+
+	<p>
+		Here is a simple demo:
+	</p>
+
+	<ul id="page-container">
+		{{#list links}}<a href="{{url}}">{{value}}</a>{{/list}}
+	</ul>
+
+	<div id="log-area">
+	</div>
+
+	<p>
+		<a href="/history">Reload history page</a>
+	</p>
+
+	<aside>
+		Additional resources:
+		<ul>
+			<li>
+				<a target="blank" href="http://www.liferay.com/web/iliyan.peychev/blog/-/blogs/9792999">HTML5 History API and Liferay</a>
+			</li>
+			<li>
+				<a target="blank" href="http://www.w3.org/TR/html5/history.html">W3C HTML5 History API</a>
+			</li>
+		</ul>
+	</aside>
+</article>
+
+<div class="back">
+	<a href="/">Back</a>
+</div>
+
+<script src="/js/history.js"></script>

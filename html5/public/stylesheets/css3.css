@@ -1,0 +1,45 @@
+.example {
+	background-color: #EEE;
+	margin-top: 2em;
+	padding: 2em;
+	text-align: left;
+	width: 20em;
+}
+
+.border-radius {
+	border-radius: 15px;
+}
+
+.box-shadow {
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px 5px #DDD;
+}
+
+.multiple-backgrounds {
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px 5px #DDD;
+	background-repeat: no-repeat;
+	background-image: url(assets/liferay.jpg), url(assets/symp.jpg);
+	background-position: 10px 300px, left top;
+	height: 307px;
+	width: 480px;
+}
+
+.text-shadow {
+	border-radius: 15px;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 1px #D7D;
+}
+
+.overflow-wrap {
+	border-radius: 15px;
+	overflow-wrap: break-word;
+}
+
+
+.resizable-elements {
+	resize: both;
+	height: 10em;
+	overflow: auto;
+	width: 30em;
+}

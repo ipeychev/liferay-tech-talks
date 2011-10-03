@@ -1,0 +1,55 @@
+<h1>{{title}}</h1>
+
+<article>
+	<h2>Rich set of features like:</h2>
+
+	<ul>
+		<li>
+			Reading files synchronously or asynchronously.
+		</li>
+		<li>
+			Creating Blobs (Binary Large Object).
+		</li>
+		<li>
+			Writing temporary (or not) files.
+		</li>
+		<li>
+			Reading directories.
+		</li>
+		<li>
+			Copy, move, rename files and directories.
+		</li>
+		<li>
+			Dragging files from Desktop to browser.
+		</li>
+		<li>
+			Dragging files from browser to Desktop (aka "downloading via Drag&Drop").
+		</li>
+		<li>
+			Uploading binary data (requires <a href="http://www.w3.org/TR/XMLHttpRequest2/" target="_blank">XMLHttpRequest Level 2</a>).
+		</li>
+	</ul>
+
+	<h3>Example - text editor which saves the data in a file while you are typing.</h3>
+
+	<em>Please note: we are not able to work with the "real" filesystem. Instead, <strong>we are working in SANDBOXED filesystem</strong>.</em>
+
+	<p>
+		In order to test, <strong>please write someting and refresh the page</strong>.
+	</p>
+
+	<p>
+		<em>Currently this example will work with Google Chrome only.</em>		
+	</p>
+
+	<textarea cols="100" rows="20" id="aricle_editor"></textarea>
+
+	<button id="deleteFile">Delete file</button>
+</article>
+
+<div class="back">
+	<a href="/">Back</a>
+</div>
+
+<script src="http://yui.yahooapis.com/3.4.0/build/yui/yui-min.js"></script>
+<script src="/js/file_access.js"></script>
