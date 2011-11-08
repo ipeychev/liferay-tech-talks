@@ -36,8 +36,8 @@ object TailRecursion {
 
   def main(args: Array[String]): Unit = {
     // println("Factorial de 1: " + TailRecursion.factorial(3))
-    //nonTailRecursive(11)
+    //nonTailRecursive(1000)
     
-    tailRecursive(11)
+    tailRecursive(10000)
   }
 }
